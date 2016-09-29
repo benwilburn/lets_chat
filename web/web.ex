@@ -23,6 +23,10 @@ defmodule LetsChat.Web do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
+      alias LetsChat.Repo
+
+      @primary_key {:id, :binary_id, autogenerate: true}
+      @foreign_key_type :binary_id
     end
   end
 
